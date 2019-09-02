@@ -1,3 +1,3 @@
-from src import client
+from src import mongo
 
-print(client)
+print(mongo.get_collections())
