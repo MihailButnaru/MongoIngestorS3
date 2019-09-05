@@ -1,0 +1,14 @@
+# Copyright | 2019 | All rights reserved
+# MIHAIL BUTNARU
+
+
+# MONGO DATABASE CONFIGURATIONS
+export MONGODB_NAME=""
+export MONGODB_HOST=""
+export MONGODB_PORT=27017
+
+# AWS CREDENTIALS
+export AWS_SERVICE=""
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_BUCKET_NAME=""
