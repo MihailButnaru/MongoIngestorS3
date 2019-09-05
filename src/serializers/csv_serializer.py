@@ -28,5 +28,6 @@ class CSVSerializer:
                         writer.writeheader()
                     for data in dict_data[file_name]:
                         writer.writerow(data)
+            return file_names
         except IOError as error:
             raise ValueError(error)

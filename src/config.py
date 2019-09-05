@@ -11,7 +11,7 @@ class Config:
         """
         Specify the name of the mongo database
         """
-        return os.getenv('MONGODB_NAME', 'gymManagement')
+        return os.getenv('MONGODB_NAME', None)
 
     @property
     def MONGODB_HOST(self):
@@ -19,7 +19,7 @@ class Config:
         Specify the host of the mongo database
             [localhost] default
         """
-        return os.getenv('MONGODB_HOST', 'localhost')
+        return os.getenv('MONGODB_HOST', None)
 
     @property
     def MONGODB_PORT(self):
@@ -27,7 +27,7 @@ class Config:
         Specify the port of the mongo database
             [27017] default
         """
-        return os.getenv('MONGODB_PORT', 27017)
+        return os.getenv('MONGODB_PORT', None)
 
     @property
     def MONGODB_USERNAME(self):
@@ -68,8 +68,8 @@ class Config:
         return os.getenv('AWS_SECRET_ACCESS_KEY', None)
 
     @property
-    def AWS_REGION_NAME(self):
+    def AWS_BUCKET_NAME(self):
         """
-        Specify the aws region name
+        Specify the aws bucket name
         """
-        return os.getenv('AWS_REGION_NAME', None)
+        return os.getenv('AWS_BUCKET_NAME', None)
