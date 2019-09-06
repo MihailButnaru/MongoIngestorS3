@@ -1,6 +1,7 @@
 # Copyright | 2019 | All rights reserved
 # MIHAIL BUTNARU
 from src.serializers.csv_serializer import CSVSerializer
+from src.serializers.json_serializer import JSONSerializer
 
 class SerializerFactory:
     """
@@ -16,6 +17,8 @@ class SerializerFactory:
         """
         if format == 'csv':
             return CSVSerializer()
+        elif format == 'json':
+            return JSONSerializer()
         else:
             raise ValueError(format)
             
