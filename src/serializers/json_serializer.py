@@ -16,7 +16,9 @@ class JSONSerializer:
 
     def _format_json_documents(self, data):
         """
-        Checks each document and it clean the unwanted symbols
+        Checks each document and cleans the unwanted symbols
+            Args:
+                data (list): list of data from mongo database
         """
         file_names = data.keys()
         try:
@@ -31,7 +33,10 @@ class JSONSerializer:
 
     def _save_json_file(self, file_name, data):
         """
-        Saves the data into a json file on the current directory
+        Saves the data into a json file in the current directory
+            Args:
+                file_name (str): name of the file to be saved as
+                data (list): data from mongo database
         """
         with open(file_name+'.json', 'w') as json_file:
             json.dump({file_name: data}, json_file)
