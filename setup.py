@@ -19,8 +19,8 @@ VERSION = '0.1.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    boto3,
-    pymongo
+    'boto3',
+    'pymongo'
 ]
 
 # What packages are optional?
@@ -96,7 +96,6 @@ setup(
     version=about['__version__'],
     description=DESCRIPTION,
     long_description=long_description,
-    long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
